@@ -309,26 +309,27 @@
           <div class="modal-content">
              <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Insira dados de licitação</h4>
+                <h4 class="modal-title">Insira dados de licitação:</h4>
              </div>
              <div class="modal-body">
 
                <form>
                  <label>Modalidade</label>
-                 &nbsp &nbsp &nbsp &nbsp &nbsp
+                 <div style = "padding-left: 0px">
                  <input id="Modalidade" list="Modalidades" name="Modalidade">
                  <datalist id="Modalidades">
                    <option value = "Pregão">
                    <option value = "Convite">
                    <option value = "Audiência">
                  </datalist>
+                </div>
                </form>
 
 
 
            <form>
              <label>Unidade</label>
-             &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+             <div style = "padding-left: 0px">
              <input id="Unidade" list="Unidades" name="Unidades">
              <datalist id="Unidades">
                <option value = "Escola Politecnica">
@@ -337,11 +338,12 @@
                <option value = "Faculdade de Filosofia Letras e Ciências Humanas">
 
              </datalist>
+            </div>
            </form>
 
            <form>
              <label>O que licitar?</label>
-             &nbsp &nbsp
+             <div style = "padding-left: 0px">
              <input id="Objeto" list="Objetos" name="Objetos">
              <datalist id="Objetos">
                <option value = "Altera Sockit FPGA">
@@ -350,6 +352,7 @@
                <option value = "Berimbau">
 
              </datalist>
+            </div>
            </form>
 
 
@@ -362,9 +365,7 @@
                </form>
              </div>
 
-             <div class="modal-footer">
-                <!-- <button type="button" class="btn btn-default"  data-dismiss="modal">Não Gostei</button> -->
-             </div>
+
           </div>
        </div>
     </div>
