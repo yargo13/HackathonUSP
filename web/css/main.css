@@ -1,3 +1,4 @@
+
 /*=====================================================
        Corporate Agency Website Stylesheet
              Body Core Stylesheet
@@ -9,7 +10,9 @@ body {
     color: black;
     font-size: 14px;
     background-color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Lato, sans-serif;
+    padding-top: 100px;
+    background: white;
 }
 .btn:focus,.btn:active {
    outline: none !important;
@@ -73,7 +76,7 @@ header .container {
     border-radius: 0;
     letter-spacing: 1px;
     font-size: 12px !important;
-    font-family: Montserrat, sans-serif;
+    font-family: Lato, sans-serif;
     transition: all 0.4s;
     padding: 25px 0;
 }
@@ -798,7 +801,7 @@ footer li a:hover {
 }
 }
 body {
-    background: #001230;
+    background: white;
 }
 #main-services  .row {
    margin: 0 30px;
@@ -1062,9 +1065,8 @@ body {
 }
 #contact .form-control,.form-control {
     background: white;
-    margin-bottom: 30px;
     border-radius: 0;
-    height: 58px;
+    height: 34px;
 }
 
 #contact .btn:hover {

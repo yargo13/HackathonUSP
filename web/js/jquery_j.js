@@ -10,8 +10,8 @@ $(document).ready(function() {
             console.log(modalidade);
             var objeto = $("#Objeto").val();
             console.log(objeto);
-            var departamento = $("#Departamento").val();
-            console.log(departamento);
+            var unidade = $("#Unidade").val();
+            console.log(unidade);
             /*if ($("#modalidade").val() == 1 ){
                   window.location.href = "./aluno.html";
                 }
@@ -21,7 +21,13 @@ $(document).ready(function() {
             //modal.style.display = "block";
         });
       $("#botao_final").click(function(event) {
-            confirm( "Respostas recebidas! Obrigado por contribuir com o Cronos!" );
+        var empresa1 = $("#Empresa1").val();
+        console.log(empresa1);
+        var departamento = $("#Departamento").val();
+        console.log(departamento);
+        var valor1 = $("#valor1").val();
+        console.log(valor1);
+            confirm( "Respostas recebidas! Licitação aberta!" );
             location.reload();
           });
     $( ".login" ).click(function() {

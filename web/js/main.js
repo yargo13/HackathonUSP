@@ -11,6 +11,16 @@ new Vue({
         .then(response => (this.licitacoes = response.data.licitacoes))
     },
     updated(){
-        $('#dataTable').DataTable();
+        $('#dataTable').DataTable( {
+          "language": {
+            "lengthMenu": "Mostrar _MENU_ resultados",
+            "info": "Mostrando _START_ a _END_ de _TOTAL_ resultados",
+            "search": "Busca:",
+            "paginate": {
+              "previous": "Anterior",
+              "next": "Próxima"
+            }
+          }
+        } );
     }
   })
