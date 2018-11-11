@@ -7,7 +7,7 @@ new Vue({
     },
     mounted () {
       axios
-        .get('https://api.myjson.com/bins/15neta')
+        .get('https://api.myjson.com/bins/s7fz2')
         .then(response => (this.licitacoes = response.data.licitacoes))
     },
     updated(){
