@@ -2,13 +2,13 @@ new Vue({
     el: '#app',
     data () {
       return {
-        dados: null
+        licitacoes: []
       }
     },
     mounted () {
       axios
-        .get('https://api.myjson.com/bins/hpsam')
-        .then(response => (this.dados = response.data))
+        .get('https://api.myjson.com/bins/15neta')
+        .then(response => (this.licitacoes = response.data.licitacoes))
     },
     updated(){
         $('#dataTable').DataTable();
