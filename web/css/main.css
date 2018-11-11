@@ -259,10 +259,7 @@ input[type=text], input[type=password] {
 .theme-contant .fa {
     position: absolute;
     right: 53px;
-    font-size: 18px;"
-}
-.theme-section {
-    padding-bottom: 104px;
+    font-size: 18px;
 }
 
 .theme-section .theme-image {
