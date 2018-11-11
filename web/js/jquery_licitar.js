@@ -1,42 +1,11 @@
-$(document).ready(function() {
-
+/*$(document).ready(function() {
 
     $("#botao_like").click(function(event) {
-        confirm( "Obrigado por contribuir com o Cronos! Gostaria de fazer outra grade?" );
-        location.reload();
-      });
-      $("#botao_proximo").click(function(event) {
-            var modalidade = $("#Modalidade").val();
-            console.log(modalidade);
-            var objeto = $("#Objeto").val();
-            console.log(objeto);
-            var departamento = $("#Departamento").val();
-            console.log(departamento);
-            /*if ($("#modalidade").val() == 1 ){
-                  window.location.href = "./aluno.html";
-                }
-            else {
-              window.location.href = "./index.html";
-            }*/
-            //modal.style.display = "block";
-        });
-      $("#botao_final").click(function(event) {
-            confirm( "Respostas recebidas! Obrigado por contribuir com o Cronos!" );
-            location.reload();
-          });
-    $( ".login" ).click(function() {
-
-             if ($("#user").val() == 8610203 && $("#pass").val() == 123456){
-               window.location.href = "./aluno.html";
-             }
-             else if ($("#user").val() == 123456 && $("#pass").val() == 123456){
-               window.location.href = "./prof_tabela.html";
-             }
-           });
-
-    $("#botao_grade").click(function(event) {
         var yourArray = [];
-        //alert( "Handler for .submit() called." );
+        confirm( "Escolher outra grade?" );
+        location.reload();
+      }
+/*
         $(".vermelho").each(function() {
 
             yourArray.push($(this).text());
@@ -227,9 +196,7 @@ $(document).ready(function() {
               }
 
             }
-
-
-
+*
 
             //alert($(this).text());
         });
@@ -238,6 +205,7 @@ $(document).ready(function() {
     });
 
 
+*/
     $(".celula_grade").click(function() {
         if ($(this).hasClass("vermelho")) {
             $(this).removeClass('vermelho');
@@ -245,6 +213,7 @@ $(document).ready(function() {
             $(this).addClass('vermelho');
         }
     });
+
 });
 
 

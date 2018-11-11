@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 
     $("#botao_like").click(function(event) {
         var yourArray = [];
