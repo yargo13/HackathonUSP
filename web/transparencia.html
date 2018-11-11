@@ -48,7 +48,7 @@
                   </tr>
                 </tfoot>
                 <tbody>
-                    <tr v-for="licitacao in dados">
+                    <tr v-for="licitacao in licitacoes" :key="licitacao.edital">
                         <td>{{licitacao.unidade}}</td>
                         <td>{{licitacao.edital}}</td>
                         <td>{{licitacao.aquisicao}}</td>
