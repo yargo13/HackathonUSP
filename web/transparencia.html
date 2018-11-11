@@ -15,383 +15,62 @@
       <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
       <!-- Custom styles for this template-->
       <link href="css/sb-admin.css" rel="stylesheet">
+          <!-- Bootstrap CSS,Animate CSS : Stylesheets -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS:Own Styles -->
+    <link href="css/main.css" rel="stylesheet">
 
-      <script src="https://cdn.anychart.com/js/latest/anychart.min.js" type="text/javascript"></script>
-      <script src="https://cdn.anychart.com/js/latest/data-adapter.min.js" type="text/javascript"></script>
-      <!-- <script src=" TEMA " type="text/javascript"></script> -->
-      
-    <!--  <script>
-          (function() {
-      function d() {
-          return a.anychart.color.lighten(this.sourceColor)
-      }
 
-      function c() {
-          return a.anychart.color.darken(this.sourceColor)
-      }
-
-      function b() {
-          return a.anychart.color.setOpacity(this.sourceColor, .6, !0)
-      }
-      var a = this;
-      a.anychart = a.anychart || {};
-      a.anychart.themes = a.anychart.themes || {};
-      a.anychart.themes.wines = {
-        palette: {
-            type: "distinct",
-            items: "#6f3448 #857600 #f1a122 #a50b01 #400001 #a98b80 #c08081 #86614e #c26364 #615060".split(" ")
-        },
-        defaultOrdinalColorScale: {
-            autoColors: function(b) {
-                return a.anychart.color.blendedHueProgression("#f1a122",
-                    "#a50b01", b)
-            }
-        },
-        defaultLinearColorScale: {
-            colors: ["#f1a122", "#a50b01"]
-        },
-        defaultFontSettings: {
-            fontColor: "#3e2723"
-        },
-        defaultBackground: {
-            fill: {
-                src: "https://cdn.anychart.com/images/themes/brickwall.png",
-                mode: "tile"
-            },
-            stroke: "#e3e3e3",
-            cornerType: "round",
-            corners: 3
-        },
-        defaultSeparator: {
-            fill: "#CECECE"
-        },
-        defaultTooltip: {
-            background: {
-                fill: "#e3e3e3",
-                stroke: "#d4d4d4"
-            },
-            padding: {
-                top: 8,
-                right: 15,
-                bottom: 10,
-                left: 15
-            }
-        },
-        defaultColorRange: {
-            stroke: "#bdbdbd",
-            ticks: {
-                stroke: "#bdbdbd",
-                position: "outside",
-                length: 7,
-                enabled: !0
-            },
-            minorTicks: {
-                stroke: "#bdbdbd",
-                position: "outside",
-                length: 5,
-                enabled: !0
-            },
-            marker: {
-                padding: {
-                    top: 3,
-                    right: 3,
-                    bottom: 3,
-                    left: 3
-                },
-                fill: "#37474f",
-                hoverFill: "#37474f"
-            }
-        },
-        defaultScroller: {
-            fill: "#e3e3e3",
-            selectedFill: "#d0d0d0",
-            thumbs: {
-                fill: "#F9FAFB",
-                stroke: "#bdc8ce",
-                hoverFill: "#bdc8ce",
-                hoverStroke: "#e9e4e4"
-            }
-        },
-        defaultGridSettings: {
-            stroke: "#9e9e9e 0.4"
-        },
-        defaultMinorGridSettings: {
-            stroke: "#bdbdbd 0.4"
-        },
-        chart: {
-            padding: {
-                top: 20,
-                right: 25,
-                bottom: 15,
-                left: 15
-            },
-            defaultSeriesSettings: {
-                candlestick: {
-                    risingFill: "#6f3448",
-                    risingStroke: "#6f3448",
-                    hoverRisingFill: d,
-                    hoverRisingStroke: c,
-                    fallingFill: "#f1a122",
-                    fallingStroke: "#f1a122",
-                    hoverFallingFill: d,
-                    hoverFallingStroke: c,
-                    selectRisingStroke: "3 #6f3448",
-                    selectFallingStroke: "3 #f1a122",
-                    selectRisingFill: "#333333 0.85",
-                    selectFallingFill: "#333333 0.85"
-                },
-                ohlc: {
-                    risingStroke: "#6f3448",
-                    hoverRisingStroke: c,
-                    fallingStroke: "#f1a122",
-                    hoverFallingStroke: c,
-                    selectRisingStroke: "3 #6f3448",
-                    selectFallingStroke: "3 #f1a122"
-                }
-            }
-        },
-        map: {
-            unboundRegions: {
-                enabled: !0,
-                fill: "#e3e3e3",
-                stroke: "#bdbdbd"
-            },
-            defaultSeriesSettings: {
-                base: {
-                    stroke: c,
-                    labels: {
-                        fontColor: "#212121"
-                    }
-                },
-                connector: {
-                    stroke: "1.5 #6f3448",
-                    hoverStroke: "1.5 #37474f",
-                    selectStroke: "1.5 #000",
-                    markers: {
-                        stroke: "1.5 #e3e3e3",
-                        fill: "#857600"
-                    },
-                    hoverMarkers: {
-                        fill: "#857600"
-                    },
-                    selectMarkers: {
-                        fill: "#000"
-                    }
-                }
-            }
-        },
-        sparkline: {
-            padding: 0,
-            background: {
-                stroke: "#e3e3e3"
-            },
-            defaultSeriesSettings: {
-                area: {
-                    stroke: "1.5 #6f3448",
-                    fill: "#6f3448 0.5"
-                },
-                column: {
-                    fill: "#6f3448",
-                    negativeFill: "#f1a122"
-                },
-                line: {
-                    stroke: "1.5 #6f3448"
-                },
-                winLoss: {
-                    fill: "#6f3448",
-                    negativeFill: "#f1a122"
-                }
-            }
-        },
-        bullet: {
-            background: {
-                stroke: "#e3e3e3"
-            },
-            defaultMarkerSettings: {
-                fill: "#6f3448",
-                stroke: "2 #6f3448"
-            },
-            padding: {
-                top: 5,
-                right: 10,
-                bottom: 5,
-                left: 10
-            },
-            margin: {
-                top: 0,
-                right: 0,
-                bottom: 0,
-                left: 0
-            },
-            rangePalette: {
-                items: ["#868686", "#969696", "#A6A6A6", "#BCBCBC", "#D2D2D2"]
-            }
-        },
-        heatMap: {
-            stroke: "1 #e3e3e3",
-            hoverStroke: "1.5 #e3e3e3",
-            selectStroke: "2 #e3e3e3",
-            labels: {
-                fontColor: "#212121"
-            }
-        },
-        treeMap: {
-            headers: {
-                background: {
-                    enabled: !0,
-                    fill: "#e3e3e3",
-                    stroke: "#bdbdbd",
-                    cornerType: "square",
-                    corners: 0
-                }
-            },
-            hoverHeaders: {
-                fontColor: "#3e2723",
-                background: {
-                    fill: "#bdbdbd",
-                    stroke: "#bdbdbd",
-                    cornerType: "square",
-                    corners: 0
-                }
-            },
-            labels: {
-                fontColor: "#212121"
-            },
-            selectLabels: {
-                fontColor: "#fafafa"
-            },
-            stroke: "#bdbdbd",
-            selectStroke: "2 #eceff1"
-        },
-        stock: {
-            padding: [20, 30, 20, 60],
-            defaultPlotSettings: {
-                xAxis: {
-                    background: {
-                        fill: "#e3e3e3 0.5",
-                        stroke: "#bdbdbd",
-                        cornerType: "square",
-                        corners: 0
-                    }
-                }
-            },
-            scroller: {
-                fill: "none",
-                selectedFill: "#e3e3e3 0.5",
-                outlineStroke: "#bdbdbd",
-                defaultSeriesSettings: {
-                    base: {
-                        selectStroke: b
-                    },
-                    candlestick: {
-                        risingFill: "#999",
-                        risingStroke: "#999",
-                        fallingFill: "#999",
-                        fallingStroke: "#999",
-                        selectRisingStroke: b,
-                        selectFallingStroke: b,
-                        selectRisingFill: b,
-                        selectFallingFill: b
-                    },
-                    ohlc: {
-                        risingStroke: "#999",
-                        fallingStroke: "#999",
-                        selectRisingStroke: b,
-                        selectFallingStroke: b
-                    }
-                }
-            },
-            xAxis: {
-                background: {
-                    enabled: !1
-                }
-              }
-            }
-          }
-        }).call(this);
-      </script>-->
-
-    <script>
-        anychart.onDocumentLoad(function() {
-            anychart.theme(anychart.themes.wines);
-            var tableData = anychart.data.parseHtmlTable('#tableWithData');
-            var chart = anychart.bar();
-            chart.data(tableData);
-            var legend = chart.legend();
-            legend.enabled(true);
-            var tooltip = chart.tooltip();
-            tooltip.textFormatter('{%SeriesName}: {%Value} ({%YPercentOfCategory}%)');
-            chart.container('container');
-            chart.draw();
-        });
-    </script>
-  </head>
-
-  <style>
-      * {
-      margin: 0;
-      }
-  
-      #container, html, body {
-      width: 100%; 
-      height: 80%;
-      }
-  
-      #container {
-      float: left;
-      width: 100%;
-      }
-      #tableWithData {
-      display: none;
-      }
-  </style>
+    <!-- Google Font and font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href="css/elici.css" rel="stylesheet">
+   </head>
 
    <body id="page-top">
-      <div id="container"></div>
-      <table id="tableWithData" border="1" cellpadding="5">
-        <caption>Gastos com licitações</caption>
-        <thead>
-          <tr>
-            <th>Categories / Brands</th>
-            <th>Manutenção</th>
-            <th>Produtos de limpeza</th>
-            <th>Equipamentos de pesquisa</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Escola Politécnica</td>
-            <td>10</td>
-            <td>5</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Faculdade de Medicina</td>
-            <td>14</td>
-            <td>4</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>Escola de Enfermagem</td>
-            <td>20</td>
-            <td>4</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>Faculdade de Econômia e Administração</td>
-            <td>13</td>
-            <td>6</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>Faculdade de Arquitetura e Urbanismo</td>
-            <td>15</td>
-            <td>14</td>
-            <td>13</td>
-          </tr>
-        </tbody>
-      </table>
-     
+
+
+    <!-- Header section Start -->
+    <header id="js-header">
+        <!-- Navbar section Start -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- conainer Start-->
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="fa fa-align-left" style="font-size: 16px;"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="images/E-lici_logo_small.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+          
+              <li><input type="button" name="button_func" value="Licitações" class="btn btn-primary" onclick="window.location.href='licitacoes_edit.html'"/></li>
+          
+              <li>  &nbsp &nbsp &nbsp &nbsp &nbsp</li>
+          
+              <li><input type="button" name="button_func" value="Transparência" class="btn btn-primary" onclick="window.location.href='transparencia.html'"/></li>
+          
+          <!--
+                    <li><input id = "user"style="border-radius: 8%;" type="text" placeholder="Usuário" name="uname" required></li>
+                    <li>  &nbsp &nbsp </li>
+                    <li><input id = "pass" style="border-radius: 8%;" type="password" placeholder="Senha" name="psw" required></li>
+                    <li>  &nbsp &nbsp </li>
+                    <li id = "login" > <button style="border-radius: 8%;" id="login-button" type="button" class = "login">Entrar</button> </li>
+          -->
+          
+          
+                </ul>
+              </div>
+            </div>
+          </div>
+              <!-- conainer Ended-->
+        </nav>
+            <!-- Navbar section Ended -->
+    </header>
     <div id="app">
       <!-- DataTables Example -->
       <div class="card mb-3">
@@ -433,18 +112,8 @@
           </div>
         </div>
   
-<<<<<<< HEAD
-        <p class="small text-center text-muted my-5">
-          <em>More table examples coming soon...</em>
-        </p>
-  
-      </div>
-      <!-- /.container-fluid -->
-  
-=======
     </div>
     <!-- /.content-wrapper -->
->>>>>>> e43984d68cac793e2dded9b6be82cae99c11eb26
   
   </div>
   <!-- /#wrapper -->
