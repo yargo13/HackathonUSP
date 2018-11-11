@@ -19,6 +19,23 @@
     width: 140px;
 }
 
+.btn-secondary {
+    color: #17c0e3;
+    border-color: #17c0e3;
+    border-width: 2px;
+    background-color: white;
+    border-radius: 20px;
+    width: 160px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color:  #0e8097;
+    border-color:  #0e8097;
+    box-shadow: none;
+    outline: none;
+}
+
 .card-text {
 margin-left: 15px;
 margin-right: 15px;
