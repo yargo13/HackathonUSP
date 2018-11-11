@@ -172,9 +172,45 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
              </div>
              <div class="modal-body">
 
-               <li><input id = "Modalidade" style="border-radius: 8%;" type="text" placeholder="Modalidade" name="modaliname" required></li>
-               <li><input id = "Objeto" style="border-radius: 8%;" type="text" placeholder="O que quer licitar?" name="objetoname" required></li>
-               <li><input id = "Departamento" style="border-radius: 8%;" type="text" placeholder="Departamento" name="departamentoname" required></li>
+               <form>
+                 <label>Modalidade</label>
+                 &nbsp &nbsp &nbsp &nbsp &nbsp
+                 <input id="Modalidade" list="Modalidades" name="Modalidade">
+                 <datalist id="Modalidades">
+                   <option value = "Pregão">
+                   <option value = "Convite">
+                   <option value = "Audiência">
+                 </datalist>
+               </form>
+
+
+
+           <form>
+             <label>Unidade</label>
+             &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+             <input id="Unidade" list="Unidades" name="Unidades">
+             <datalist id="Unidades">
+               <option value = "Escola Politecnica">
+               <option value = "Instituto de Matemática e Estatística">
+               <option value = "Escola Superior de Agricultura "Luiz de Queiroz"">
+               <option value = "Faculdade de Filosofia Letras e Ciências Humanas">
+
+             </datalist>
+           </form>
+
+           <form>
+             <label>O que licitar?</label>
+             &nbsp &nbsp
+             <input id="Objeto" list="Objetos" name="Objetos">
+             <datalist id="Objetos">
+               <option value = "Altera Sockit FPGA">
+               <option value = "Máquina PagSeguro">
+               <option value = "Notebook - 16GB RAM - i7 8ª Geração">
+               <option value = "Berimbau">
+
+             </datalist>
+           </form>
+
 
                 <!-- DivTable.com -->
              </div>
@@ -200,15 +236,76 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                  <div class="modal-content">
                     <div class="modal-header">
                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                       <h4 class="modal-title">O que você não gostou de sua grade?</h4>
+                       <h4 class="modal-title">Informações adicionais</h4>
                     </div>
-                  <div class="modal-body col-sm-push-4">
+                  <div class="modal-body">
                      <div >
                        <div >
 
-                        <li><input id = "Modalidade" style="border-radius: 8%;" type="text" placeholder="Modalidade" name="modaliname" required></li>
-                        <li><input id = "Objeto" style="border-radius: 8%;" type="text" placeholder="O que quer licitar?" name="objetoname" required></li>
-                        <li><input id = "Departamento" style="border-radius: 8%;" type="text" placeholder="Departamento" name="departamentoname" required></li>
+                    <form>
+                      <label>Departamentos</label>
+                      &nbsp &nbsp
+                      <input id="Departamento" list="Departamentos" name="Departamentos">
+                      <datalist id="Departamentos">
+                        <option value = "PTC">
+                        <option value = "PCS">
+                        <option value = "PMI">
+                        <option value = "PRO">
+
+                      </datalist>
+                    </form>
+
+
+                        <fieldset>
+                            <legend>Pesquisas prévias</legend>
+                            <li> <label>Empresa</label>
+                            &nbsp &nbsp
+                            <input id="Empresa1" list="Empresas1" name="Empresas1">
+                            <datalist id="Empresas1">
+                              <option value = "Intel">
+                              <option value = "PagSeguro">
+                              <option value = "IBM">
+                              <option value = "Microsoft">
+
+                            </datalist>
+                            &nbsp &nbsp &nbsp &nbsp &nbsp
+                            <label for="valor1">Valor</label>
+                            <input id="valor1" name="valor1" placeholder="R$"/>
+                            </li>
+
+                            <li> <label>Empresa</label>
+                            &nbsp &nbsp
+                            <input id="Empresa2" list="Empresas2" name="Empresas2">
+                            <datalist id="Empresas2">
+                              <option value = "Intel">
+                              <option value = "PagSeguro">
+                              <option value = "IBM">
+                              <option value = "Microsoft">
+
+                            </datalist>
+                            &nbsp &nbsp &nbsp &nbsp &nbsp
+                            <label for="valor2">Valor</label>
+                            <input id="valor2" name="valor2" placeholder="R$"/>
+                            </li>
+
+                            <li> <label>Empresa</label>
+                            &nbsp &nbsp
+                            <input id="Empresa3" list="Empresas3" name="Empresas3">
+                            <datalist id="Empresas3">
+                              <option value = "Intel">
+                              <option value = "PagSeguro">
+                              <option value = "IBM">
+                              <option value = "Microsoft">
+
+                            </datalist>
+                            &nbsp &nbsp &nbsp &nbsp &nbsp
+                            <label for="valor3">Valor</label>
+                            <input id="valor3" name="valor3" placeholder="R$"/>
+                            </li>
+
+                          </fieldset>
+
+                        <!--<li><input id = "Edital" style="border-radius: 8%;" type="text" placeholder="Nº do Edital" name="editalname" required></li>-->
 
                         <form>
                            <button  id="botao_final" class="btn btn-success" type="submit" data-toggle="modal" data-dismiss="modal">Finaliza </button>
