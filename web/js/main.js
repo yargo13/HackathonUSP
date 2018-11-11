@@ -7,7 +7,7 @@ new Vue({
     },
     mounted () {
       axios
-        .get('http://localhost:3000/licitacoes')
+        .get('https://api.myjson.com/bins/hpsam')
         .then(response => (this.dados = response.data))
     },
     updated(){
