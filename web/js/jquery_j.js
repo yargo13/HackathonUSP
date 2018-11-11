@@ -67,7 +67,7 @@ $(document).ready(function() {
         `;
         doc.text(customText, 15, 15);
         doc.save('sample-file.pdf');
-        confirm( "Respostas recebidas! Licitação aberta!", () => {location.reload();} );       
+        //confirm( "Respostas recebidas! Licitação aberta!", () => {location.reload();} );       
           });
     $( ".login" ).click(function() {
 
